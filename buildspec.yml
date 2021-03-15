@@ -5,7 +5,7 @@ phases:
       nodejs: 12
   build:
     commands:
-      - sam deploy --stack-name teste-teste-staging --template-file template.yml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-1mgz71ugmok0h --output-template-file packaged-template.yml --capabilities CAPABILITY_IAM
+      - sam deploy --parameter-overrides STAGE=staging --stack-name teste-teste-staging --template-file template.yml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-1mgz71ugmok0h --output-template-file packaged-template.yml --capabilities CAPABILITY_IAM
 
 artifacts:
   files:

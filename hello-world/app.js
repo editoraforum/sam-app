@@ -21,6 +21,7 @@ exports.lambdaHandler = async (event, context) => {
             'statusCode': 200,
             'body': JSON.stringify({
                 message: 'hello world ' + process.env.STAGE,
+                AUTH0_TOKEN_SECRET: process.env.AUTH0_TOKEN_SECRET,
                 // location: ret.data.trim()
             })
         }

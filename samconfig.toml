@@ -1,0 +1,18 @@
+version = 0.1
+[staging]
+[staging.deploy]
+[staging.deploy.parameters]
+stack_name = "teste-teste-staging"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1mgz71ugmok0h"
+s3_prefix = "teste-teste-staging"
+region = "sa-east-1"
+capabilities = "CAPABILITY_IAM"
+
+[production]
+[production.deploy]
+[production.deploy.parameters]
+stack_name = "teste-teste-production"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1mgz71ugmok0h"
+s3_prefix = "teste-teste-production"
+region = "sa-east-1"
+capabilities = "CAPABILITY_IAM"
